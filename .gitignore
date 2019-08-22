@@ -1,2 +1,3 @@
 # Makes sure all node modules are ignored
 node_modules/
+/RspecLesson/

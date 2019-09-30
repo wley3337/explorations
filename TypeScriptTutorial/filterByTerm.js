@@ -13,7 +13,7 @@ function filterByTerm(input, searchTerm, lookupKey) {
         throw Error("input cannot be empty");
     var regex = new RegExp(searchTerm, "i");
     return input.filter(function (arrayElement) {
-        return arrayElement[lookupKey].match(regex);
+        return arrayElement[lookupKey].match(regex).toString();
     });
 }
-filterByTerm(arrayOfLinks, term);
+filterByTerm(arrayOfLinks, "string3");

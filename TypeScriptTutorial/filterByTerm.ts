@@ -16,7 +16,7 @@ const obj3 = { url: "str1"};
 const arrayOfLinks: Array<ILink> = [obj1, obj2, obj3];
 const term: string = "java";
 
-function filterByTerm(input: Array<ILink>, searchTerm: string, lookupKey: string = "url"){
+function filterByTerm(input: Array<ILink>, searchTerm: string, lookupKey: string = "url"): Array<ILink>{
 // or types as the following function filterByTerm(input: Array<string>, searchTerm: string){
     if(!searchTerm) throw Error("searchTerm cannot be empty");
     if(!input.length) throw Error("input cannot be empty");
@@ -27,4 +27,4 @@ function filterByTerm(input: Array<ILink>, searchTerm: string, lookupKey: string
 }
 
 
-filterByTerm(arrayOfLinks, term);
+filterByTerm(arrayOfLinks, "string3");
